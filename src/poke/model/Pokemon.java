@@ -41,7 +41,9 @@ public class Pokemon
 	
 	public String toString()
 	{
-		
+		String myToString = "Pokemon is the best!";
+
+		return myToString;
 	}
 	
 	public int getPokemonInformation()
