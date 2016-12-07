@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import poke.controller.PokemonController;
+import poke.controller.pokeController;
 import poke.view.PokemonPanel;
 
 
@@ -16,7 +16,7 @@ public class PanelTest
 	@Before
 	public void setUp() throws Exception
 	{
-		testedPanel = new PokemonPanel(new PokemonController());
+		testedPanel = new PokemonPanel(new pokeController());
 	}
 
 	@After

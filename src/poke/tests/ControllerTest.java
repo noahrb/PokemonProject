@@ -6,18 +6,18 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import poke.controller.PokemonController;
+import poke.controller.pokeController;
 import poke.model.Pokemon;
 import poke.view.PokemonFrame;
 
 public class ControllerTest
 {
-	private PokemonController testedController;
+	private pokeController testedController;
 	
 	@Before
 	public void setUp() throws Exception
 	{
-		testedController = new PokemonController();
+		testedController = new pokeController();
 	}
 
 	@After

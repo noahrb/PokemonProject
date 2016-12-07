@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import poke.view.*;
-import poke.controller.PokemonController;
+import poke.controller.pokeController;
 
 
 public class FrameTest
@@ -16,7 +16,7 @@ public class FrameTest
 	@Before
 	public void setUp() throws Exception
 	{
-		testedFrame = new PokemonFrame(new PokemonController());
+		testedFrame = new PokemonFrame(new pokeController());
 	}
 
 	@After
