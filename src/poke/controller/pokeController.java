@@ -27,8 +27,8 @@ public class pokeController
 	
 	public void buildPokedex()
 	{
-		 pokedex.add(new Geodude("derpy"));
-		 pokedex.add(new Pikachu("I choose you"));
+		 pokedex.add(new Geodude());
+		 pokedex.add(new Pikachu());
 	}
 	
 	public String[] buildPokedexText()
@@ -49,6 +49,6 @@ public class pokeController
 		current.setName(name);
 		current.setAttackPoints(combat);
 		current.setSpeed(speed);
-		current.setHealthPoints(health, health);
+		current.setHealthPoints(health);
 	}
 }

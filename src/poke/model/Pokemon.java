@@ -38,61 +38,50 @@ public class Pokemon
 		
 		return pokemonTypes;
 	}
-	
 	public String toString()
 	{
 		String myToString = "Pokemon is the best!";
 
 		return myToString;
 	}
-	
+
 	public String getPokemonInformation()
 	{
 		String pokemonInfo = "This pokemon is of type: " + this.getClass().getSimpleName();
 		return pokemonInfo;
 	}
-	
-	public int getAttackPoints()
-	{
-		return attackPoints;
-	}
-	
-	public int getHealthPoints()
-	{
-		return healthPoints;
-	}
-
 	public double getSpeed() {
 		return speed;
 	}
-
 	public void setSpeed(double speed) {
 		this.speed = speed;
 	}
-
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 	public int getNumber() {
 		return number;
 	}
-
 	public void setNumber(int number) {
 		this.number = number;
 	}
 
-	public void setAttackPoints(int attackPoints)
-	{
+	public int getAttackPoints() {
+		return attackPoints;
+	}
+
+	public void setAttackPoints(int attackPoints) {
 		this.attackPoints = attackPoints;
 	}
-	
-	public void setHealthPoints(int HealthPoints, int healthPoints)
-	{
+
+	public int getHealthPoints() {
+		return healthPoints;
+	}
+
+	public void setHealthPoints(int healthPoints) {
 		this.healthPoints = healthPoints;
 	}
 }

@@ -5,11 +5,13 @@ public class Geodude extends Pokemon implements Rock
 	
 	public Geodude()
 	{
-		super(attackPoints, attackPoints, speed, "Geodude", 74);
+		super(7, 25, 2, "Geodude", 74);
 	}
-	
-	public Geodude(String name)
-	{
-		super(attackPoints, attackPoints, speed, name, 74);
+
+	@Override
+	public void rockSmash() {
+		// TODO Auto-generated method stub
+		
 	}
+
 }
