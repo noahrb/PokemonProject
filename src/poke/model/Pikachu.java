@@ -4,11 +4,18 @@ public class Pikachu extends Pokemon implements Electric
 {
 	public Pikachu()
 	{
-		super("Pikechu", 25);
+		super(10, 20, 3, "Pikachu", 25);
 	}
-	
-	public Pikachu(String name)
-	{
-		super(name, 25);
+
+	@Override
+	public void thunderbolt() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void spark() {
+		// TODO Auto-generated method stub
+		
 	}
 }

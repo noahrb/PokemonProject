@@ -1,15 +1,15 @@
-package pokemon.view;
+package poke.view;
 
 import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.Dimension;
-import pokemon.controller.PokemonController;
+import poke.controller.pokeController;
 
 public class PokemonPanel extends JPanel
 {
-	private PokemonController baseController;
+	private pokeController baseController;
 	private ImageIcon pokemonIcon;
 	private SpringLayout baseLayout;
 	private JButton updateButton;
@@ -28,7 +28,7 @@ public class PokemonPanel extends JPanel
 	private JTextField numberField;
 	private JTextArea advancedArea;
 	
-	public PokemonPanel(PokemonController baseController)
+	public PokemonPanel(pokeController baseController)
 	{
 		super();
 		this.baseController = baseController;

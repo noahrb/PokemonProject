@@ -46,7 +46,7 @@ public class Pokemon
 		return myToString;
 	}
 	
-	public int getPokemonInformation()
+	public String getPokemonInformation()
 	{
 		String pokemonInfo = "This pokemon is of type: " + this.getClass().getSimpleName();
 		return pokemonInfo;
@@ -91,7 +91,7 @@ public class Pokemon
 		this.attackPoints = attackPoints;
 	}
 	
-	public void setHealthPoints(int HealthPoints)
+	public void setHealthPoints(int HealthPoints, int healthPoints)
 	{
 		this.healthPoints = healthPoints;
 	}

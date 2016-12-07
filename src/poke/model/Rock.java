@@ -1,6 +1,6 @@
 package poke.model;
 
-public class Rock
+public interface Rock
 {
 
 }

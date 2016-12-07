@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 import poke.model.*;
+import poke.view.PokemonFrame;
 
 public class pokeController
 {
@@ -48,6 +49,6 @@ public class pokeController
 		current.setName(name);
 		current.setAttackPoints(combat);
 		current.setSpeed(speed);
-		currentSetHealthPoints(health);
+		current.setHealthPoints(health, health);
 	}
 }

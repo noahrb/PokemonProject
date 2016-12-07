@@ -1,15 +1,15 @@
-package pokemon.view;
+package poke.view;
 
 import javax.swing.JFrame;
 import java.awt.Dimension;
-import pokemon.controller.PokemonController;
+import poke.controller.pokeController;
 
 public class PokemonFrame extends JFrame
 {
-	private PokemonController baseController;
+	private pokeController baseController;
 	private PokemonPanel appPanel;
 	
-	public PokemonFrame(PokemonController baseController)
+	public PokemonFrame(pokeController baseController)
 	{
 		super();
 		this.baseController = baseController;
