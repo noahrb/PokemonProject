@@ -1,9 +1,6 @@
 package poke.controller;
-
 import java.util.ArrayList;
-
 import javax.swing.JOptionPane;
-
 import poke.model.*;
 import poke.view.PokemonFrame;
 
@@ -27,8 +24,8 @@ public class pokeController
 	
 	public void buildPokedex()
 	{
-		 pokedex.add(new Geodude());
-		 pokedex.add(new Pikachu());
+		 pokedex.add(new Geodude("datboi"));
+		 pokedex.add(new Pikachu("doge"));
 	}
 	
 	public String[] buildPokedexText()
@@ -50,5 +47,15 @@ public class pokeController
 		current.setAttackPoints(combat);
 		current.setSpeed(speed);
 		current.setHealthPoints(health);
+	}
+	
+	public ArrayList<Pokemon> getPokedex()
+	{
+		return pokedex;
+	}
+	
+	public PokemonFrame getBaseFrame()
+	{
+		return baseFrame;
 	}
 }

@@ -2,7 +2,7 @@ package poke.model;
 
 public class Pikachu extends Pokemon implements Electric
 {
-	public Pikachu()
+	public Pikachu(String name)
 	{
 		super(10, 20, 3, "Pikachu", 25);
 	}

@@ -3,7 +3,7 @@ package poke.model;
 public class Geodude extends Pokemon implements Rock
 {
 	
-	public Geodude()
+	public Geodude(String name)
 	{
 		super(7, 25, 2, "Geodude", 74);
 	}
