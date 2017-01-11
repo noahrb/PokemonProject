@@ -1,4 +1,6 @@
-package poke.model;
+package poke.model.pokemon;
+import poke.model.Pokemon;
+import poke.model.types.Rock;
 
 public class Geodude extends Pokemon implements Rock
 {
@@ -9,8 +11,8 @@ public class Geodude extends Pokemon implements Rock
 	}
 
 	@Override
-	public void rockSmash() {
-		// TODO Auto-generated method stub
+	public void rockSmash() 
+	{
 		
 	}
 

@@ -1,4 +1,4 @@
-package poke.model;
+package poke.model.types;
 
 public interface Electric 
 {

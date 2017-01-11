@@ -2,6 +2,8 @@ package poke.controller;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import poke.model.*;
+import poke.model.pokemon.Geodude;
+import poke.model.pokemon.Pikachu;
 import poke.view.PokemonFrame;
 
 public class pokeController

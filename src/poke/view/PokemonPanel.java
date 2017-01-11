@@ -155,7 +155,7 @@ public class PokemonPanel extends JPanel
 			}
 		});
 		
-		this.addMouseMotionListener(new MouseMotionListener(
+		this.addMouseMotionListener(new MouseMotionListener()
 				{
 					public void mouseDragged(MouseEvent dragged)
 					{
@@ -169,7 +169,7 @@ public class PokemonPanel extends JPanel
 							updateButton.setLocation(moved.getX() + 10, moved.getY() - 10 );
 						}
 					}
-				}));
+				});
 	}
 	
 }
