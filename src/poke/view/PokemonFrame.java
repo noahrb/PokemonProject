@@ -4,25 +4,34 @@ import javax.swing.JFrame;
 import java.awt.Dimension;
 import poke.controller.pokeController;
 
-public class PokemonFrame extends JFrame
-{
-	private pokeController baseController;
-	private PokemonPanel appPanel;
+public class PokemonFrame extends JFrame {
 	
-	public PokemonFrame(pokeController baseController)
-	{
+	private pokeController baseController;
+	private PokemonPanel panel;
+
+	public PokemonFrame(pokeController baseController){
 		super();
 		this.baseController = baseController;
-		this.appPanel = new PokemonPanel(baseController);
+		this.panel = new PokemonPanel(baseController);
 		
 		this.setupFrame();
 	}
 	
+	
 	private void setupFrame()
 	{
-		this.setContentPane(appPanel);
-		this.setTitle("POKEMON");
-		this.setSize(new Dimension(900, 600));
-		this.setVisible(true);
+		super.setContentPane(panel);
+		super.setTitle("POKEMON");
+		super.setSize(new Dimension(900, 600));
+		super.setVisible(true);
+		super.setLocationRelativeTo(null);
+		super.setMinimumSize(new Dimension(600,450));
+		super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+	
+	public PokemonPanel getPanel()
+	{
+		return this.panel;
 	}
 }

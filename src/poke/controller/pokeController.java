@@ -4,6 +4,9 @@ import javax.swing.JOptionPane;
 import poke.model.*;
 import poke.model.pokemon.Geodude;
 import poke.model.pokemon.Pikachu;
+import poke.model.pokemon.Raichu;
+import poke.model.pokemon.Squirtle;
+import poke.model.pokemon.Wartortle;
 import poke.view.PokemonFrame;
 
 public class pokeController
@@ -13,8 +16,8 @@ public class pokeController
 	
 	public void PokeController()
 	{
-		pokedex = new ArrayList<Pokemon>();
-		buildPokedex();
+		this.pokedex = new ArrayList<Pokemon>();
+		this.buildPokedex();
 		
 		baseFrame = new PokemonFrame(this);
 	}
@@ -28,6 +31,10 @@ public class pokeController
 	{
 		 pokedex.add(new Geodude("datboi"));
 		 pokedex.add(new Pikachu("doge"));
+		 pokedex.add(new Pikachu("bark"));
+		 pokedex.add(new Squirtle("memeMan"));
+		 pokedex.add(new Wartortle("KnocksEmDead"));
+		 pokedex.add(new Raichu("memeMan"));
 	}
 	
 	public String[] buildPokedexText()
@@ -53,11 +60,11 @@ public class pokeController
 	
 	public ArrayList<Pokemon> getPokedex()
 	{
-		return pokedex;
+		return this.pokedex;
 	}
 	
 	public PokemonFrame getBaseFrame()
 	{
-		return baseFrame;
+		return this.baseFrame;
 	}
 }

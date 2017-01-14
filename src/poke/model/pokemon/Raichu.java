@@ -5,7 +5,7 @@ import poke.model.types.Electric;
 
 public class Raichu extends Pokemon implements Electric
 {
-	public Raichu()
+	public Raichu(String name)
 	{
 		super(15, 25, 4, "Raichu", 26);
 	}
